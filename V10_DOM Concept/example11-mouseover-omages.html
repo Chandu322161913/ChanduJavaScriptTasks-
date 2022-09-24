@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part-2 images shoes & nature concept onmouseover</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  
+    <script>
+        function myfun(source) 
+        {
+            //Target output_img_by_Id_Reference----
+            var img_dom = document.getElementById('img_response')    
+
+            //update image_source_to_Response img_tag
+            img_dom.src = source
+        } 
+    </script>
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="list-group w-75">
+                    <li class="list-group-item">
+                        <img src="../images/img-1.jpg" class="w-100" onmouseover="myfun(this.src)" />
+                    </li>
+
+                    <li class="list-group-item">
+                        <img src="../images/img-2.jpg" class="w-100" onmouseover="myfun(this.src)" />
+                    </li>
+
+                    <li class="list-group-item">
+                        <img src="../images/img-3.jpg" class="w-100" onmouseover="myfun(this.src)" />
+                    </li>
+
+                    <li class="list-group-item">
+                        <img src="../images/img-4.jpg" class="w-100" onmouseover="myfun(this.src)" />
+                    </li>
+
+                    <li class="list-group-item">
+                        <img src="../images/img-5.jpg" class="w-100" onmouseover="myfun(this.src)" />
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9">
+                <img id="img_response" class="w-100 border-primary" style="height:500px;" />
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

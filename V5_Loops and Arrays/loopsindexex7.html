@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_index</title>
+</head>
+<body>
+    <h4>Access Array data using Index</h4>
+    <script>
+        var emp = [1,"chandu","chandra@gmail.com",8885556136,"Hyd"]
+        document.write(`${emp[0]}`)
+    </script>
+    <br><br>
+
+    <h4>Access Array data using Index first and last values</h4>
+    <script>
+        var emp = [1,"chandu","chandra@gmail.com",8885556136,"Hyd"]
+        document.write(`
+        <h3> {$emp[1]} </h3>
+        <h5> {$emp[2]} </h5>`)
+        document.write(`first index value:${emp[0]}<br/>`)
+        document.write(`last index value:${emp[emp.length-1]}<br/>`)
+    </script>
+    <br><br>
+
+    <h4>Access all data using Loops</h4>
+    <script>
+        var emp = [1,"chandu","chandra@gmail.com",8885556136,"Hyd"]
+        var index=0;
+        while(index<emp.length)
+        {
+            document.write(`${index} --> ${emp[index]} </br>`)
+            index++
+        }
+    </script>
+    <br><br>
+
+    <h1>print month names</h1>
+    <select>
+        <option>Months</option>
+    <script>
+        var months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        var index=0, res=""
+        while(index<months.length)
+        {
+            res +=`<option>${months[index]}</option>`
+            index++;
+        }
+        document.write(res)
+    </script>
+    </select>
+<br><br><br>
+
+
+    <h3>Print-Days_Months_Years</h3>
+    <select>
+        <option>Days</option>
+        <script>
+            var x=1, res=""
+            while(x<=31)
+            {
+                res+= `<option> ${x} </option>`
+                x++;
+            }
+            document.write(res)
+        </script>
+    </select>
+     
+    <select>
+        <option>Months</option>
+        <script>
+            var index=0, res=""
+            while(index<months.length)
+            {
+                res +=`<option>${months[index]}</option>`
+                index++;
+            }
+            document.write(res)
+        </script>
+    </select>
+
+    <select>
+        <option>Years</option>
+        <script>
+            var x=1900, res=""
+            while(x<=2022)
+            {
+                res +=`<option> ${x} </option>`
+                x++;
+            }
+            document.write(res)
+        </script>
+    </select>
+
+    <select>
+        <option>Years</option>
+        <script>
+            var x=2022, res=""
+            while(x>=1900)
+            {
+                res +=` <option> ${x} </option>`
+                x--;
+            }
+            document.write(res)
+        </script>
+    </select>
+
+</body>
+</html>

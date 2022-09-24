@@ -1,0 +1,22 @@
+<script>
+    var d=new Date() 
+    var year, month, date, h, m, s, ms, ltime;
+
+    year= d.getFullYear()
+    month= d.getMonth()
+    date= d.getDate()
+    h= d.getHours()
+    m= d.getMinutes()
+    s= d.getSeconds()
+    ms =d.getMilliseconds()
+    ltime= d.toLocaleTimeString()
+    
+    document.write(`Today Date:${d.getDate()} <br/>`)
+    document.write(`Year:      ${d.getFullYear()}<br/>`)
+    document.write(`Month:     ${d.getMonth()+1}<br/>`)
+
+    document.write(`<br/> <br/> <br/> <br/>`)
+
+    document.write(`${date}-${month+1}-${year}[${h}-${m}-${s}]<br/>`)
+
+</script>

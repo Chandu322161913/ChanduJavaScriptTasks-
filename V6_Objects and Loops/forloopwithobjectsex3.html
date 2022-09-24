@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for_loop</title>
+</head>
+<body>
+    <script>
+
+        var emp =
+        {
+            ID : 1,
+
+            Name : 'chandra',
+
+            email : 'chandra8745@gmail.com',
+
+            phone : 8885556136
+        }
+
+        document.write(`<br/>**********object key**********<br/>`)
+        document.write (`ID: ${emp.ID} <br/>`)
+        document.write (`name: ${emp.Name} <br/>`)
+        document.write (`email: ${emp.email} <br/>`)
+        document.write (`phone: ${emp.phone} <br/>`)
+
+        document.write(`<br/>`)
+
+        //index format 
+
+        document.write(`<br/>ID : ${emp['ID']} <br/>`)
+        document.write(`Name: ${emp['Name']}<br/>`)
+        document.write(`ID : ${emp['email']} <br/>`)
+        document.write(`Name: ${emp['phone']} <br/>`)
+
+        document.write(`<br/>`)
+
+        document.write(`for in loop`)
+
+        document.write(`<br/>`)
+        document.write(`<br/>`)
+
+        for(var key in emp)
+        {
+            document.write(`${key}-${emp[key]} <br/>`)
+        }
+    </script>
+</body>
+</html>

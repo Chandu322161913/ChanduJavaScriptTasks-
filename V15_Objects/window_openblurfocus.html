@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINDOW</title>
+    <script>
+        function myname1()
+        {
+            window.open("https://jsonplaceholder.typicode.com/","_blank", "toolbar=yes, location=yes, directories=no, status=no,");
+        }
+        function myname2()
+        {
+            window.blur();
+        }
+        function myname3()
+        {
+            window.focus();
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="myname1()">open Window</button>
+    <button type="button" onclick="myname2()">blur Window</button>
+    <button type="button" onclick="myname3()">focus window</button>
+</body>
+</html>

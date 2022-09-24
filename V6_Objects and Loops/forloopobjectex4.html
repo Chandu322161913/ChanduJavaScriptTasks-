@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for_loop</title>
+</head>
+<body>
+    <script>
+        var emp=[
+            {
+            ID : 1,
+            Name : 'chandra',
+            email : 'chandra8745@gmail.com',
+            phone : 8885556136
+        },
+
+        {
+            ID: 2,
+            Name: 'suri',
+            email: 'suri35748@gmail.com',
+            phone:9581447756
+        },
+
+        {
+            ID : 3,
+            Name : 'chandra',
+            email : 'chandra8745@gmail.com',
+            phone : 8885556139
+        },
+
+        {
+            ID : 4,
+            Name : 'chandra',
+            email : 'chandra8745@gmail.com',
+            phone : 8885556138
+        },
+
+        {
+            ID : 5,
+            Name : 'chandra',
+            email : 'chandra8745@gmail.com',
+            phone : 8885556137
+        },
+
+        ]
+
+        document.write(`<br/>******object[index].key******<br/>`)
+
+        document.write(`ID: ${emp[0].ID} <br/>`)
+        document.write(`Name: ${emp[0].Name} <br/>`)
+        document.write(`Email: ${emp[0].email} <br/>`)
+        document.write(`Phone: ${emp[0].phone} <br/>`)
+
+        document.write(`<br/>**********object[index][key]*********<br/>`)
+
+        document.write(`<br/>`)
+
+        document.write(`ID: ${emp[1]['ID']} <br/>`)
+        document.write(`Name: ${emp[1]['Name']} <br/>`)
+        document.write(`email: ${emp[1]['email']} <br/>`)
+        document.write(`phone: ${emp[1]['phone']} <br/>`)
+
+document.write(`<br/>***********Nested for in loop ***********<br/>`)
+  for(var key in emp[0])
+  {
+    document.write(`${key}-${emp[0][key]} <br/>`)
+
+  }
+
+  for(var key in emp[1])
+  {
+    document.write(`${key}-${emp[1][key]} <br/>`)
+  }
+
+  for(var key in emp[2])
+  {
+    document.write(`${key}-${emp[2][key]}<br/>`)
+  }
+
+  for(var key in emp[3])
+  {
+    document.write(`${key}-${emp[3][key]}<br/>`)
+  }
+
+  for(var key in emp[4])
+  {
+    document.write(`${key}-${emp[4][key]}<br/>`)
+  }
+
+    </script>
+</body>
+</html>

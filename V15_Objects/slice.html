@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+</head>
+<body>
+    <h3>Information removing end of the array</h3>
+    <button onclick="myfun()">Try It</button>
+    <span id="demo"></span>
+
+    <script>
+        
+        document.getElementById("demo").innerHTML=Fruits;
+
+        function myfun(){
+            var Fruits=["Banana","Orange","Mango"];
+            var citrus=Fruits.slice(0,2);
+            document.getElementById("demo").innerHTML=citrus;
+        }
+
+    </script>
+</body>
+</html>

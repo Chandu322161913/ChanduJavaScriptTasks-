@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>Type Writer</h1>
+    <button onclick="typewriter()">click here</button>
+    <span id="demo"></span>
+    <script>
+        var i=0;
+        var text='ChandraBabu Naripeddi, ChandraBabu Naripeddi, ChandraBabu Naripeddi, ChandraBabu Naripeddi, ChandraBabu Naripeddi, ChandraBabu Naripeddi, ChandraBabu Naripeddi, ChandraBabu Naripeddi, ChandraBabu Naripeddi, ChandraBabu Naripeddi,ChandraBabu Naripeddi'
+        function typewriter()
+        {
+            if(i<text.length)
+            {
+                document.getElementById("demo").innerHTML+=text.charAt(i);
+                i++;
+                window.setTimeout(typewriter,1);//change number 1 2 3 4 -----etc
+            }
+        }
+    </script>
+</body>
+</html>

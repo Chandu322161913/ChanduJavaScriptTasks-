@@ -1,0 +1,24 @@
+<script>
+
+    function dateTime()
+    {
+    var d=new Date()
+    // var year, month, date, h, m, s, ms, ltime;
+
+    var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    year= d.getFullYear()
+    month= d.getMonth()
+    date= d.getDate()
+    h= d.getHours()
+    m= d.getMinutes()
+    s= d.getSeconds()
+    ms= d.getMilliseconds()
+    ltime= d.toLocaleTimeString()
+
+    document.write(`${date}-${months[d.getMonth()].slice(0.3)}-${year}[${h}:${m}:${s}]<br/>`)
+    }
+
+    window.setInterval('dateTime()',1000)
+
+</script>

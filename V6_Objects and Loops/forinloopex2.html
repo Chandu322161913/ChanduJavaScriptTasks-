@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for_loop</title>
+</head>
+<body>
+    <script>
+        var emp=[]
+        emp[`id`] = 211
+        emp[`name`] = "chandra"
+        emp[`email`] = "chandra9537@gmail.com"
+        emp[`phone`] = 8885556136
+
+        // for(var i=0; i<emp.length; i++)
+        // {
+        //     emp[i]
+        // }
+
+        // for(var index in array-variable)
+        // {
+        //     index
+        // }
+
+        for(var key in emp)
+        {
+            document.write(`${key}-${emp[key]} <br/>`)
+        }
+
+        document.write(`<hr/>`)
+
+        for(var key in emp)
+        {
+            //document.write(`${key}-${emp[key]} <br/>`)
+            document.write(`${key}-${emp[key]} <br/>`)
+        }
+
+
+    </script>
+</body>
+</html>

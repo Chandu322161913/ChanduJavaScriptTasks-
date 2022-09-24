@@ -1,0 +1,21 @@
+<script>
+    var d=new Date() 
+    var year, month, date, h, m, s, ms, ltime;
+
+    year= d.getFullYear()
+    month= d.getMonth()
+    date= d.getDate()
+    h= d.getHours()
+    m= d.getMinutes()
+    s= d.getSeconds()
+    ms= d.getMilliseconds()
+    ltime= d.toLocaleTimeString()
+
+    document.write(` Toady Date: ${date} <br/> `)
+    document.write(` Year: ${year} <br/> `)
+    document.write(` Month: ${month+1} <br/> `)
+    document.write(` Day: ${day} <br/> `)
+    document.write(` H:M:S - ${h}-${m}-${s} <br/> `)
+    document.write(` LOCAL-TIME- ${ltime} <br/>`)
+
+</script>

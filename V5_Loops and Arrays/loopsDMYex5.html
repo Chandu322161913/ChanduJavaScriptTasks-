@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <h3>Print-Days_Months_Years</h3>
+    <select>
+        <option>Days</option>
+        <script>
+            var x=1, res=""
+            while(x<=31)
+            {
+                res+= `<option> ${x} </option>`
+                x++;
+            }
+            document.write(res)
+        </script>
+    </select>
+     
+    <select>
+        <option>Months</option>
+        <script>
+            var x=1, res=""
+            while(x<=12)
+            {
+                res += `<option> ${x} </option>`
+                x++;
+            }
+            document.write(res)
+        </script>
+    </select>
+
+    <select>
+        <option>Years</option>
+        <script>
+            var x=1900, res=""
+            while(x<=2022)
+            {
+                res +=`<option> ${x} </option>`
+                x++;
+            }
+            document.write(res)
+        </script>
+    </select>
+
+    <select>
+        <option>Years</option>
+        <script>
+            var x=2022, res=""
+            while(x>=1900)
+            {
+                res +=` <option> ${x} </option>`
+                x--;
+            }
+            document.write(res)
+        </script>
+    </select>
+
+</body>
+
+</html>

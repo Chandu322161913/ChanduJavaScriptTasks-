@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ID</title>
+    <script>
+        function myfun()
+        {
+            //Taget input_Tag_By_TagName_Reference To Update Dynamic Request
+            var input_by_tagname=document.getElementsByTagName('input')[0]
+                input_by_tagname.value="Js_Response To Input"
+
+            //Taget span_By_Class_Name_Reference To Update Dynamic JS_Response
+            var span_by_className=document.getElementsByClassName('ref')[0]
+                span_by_className.innerText="Thank you Javascript updates"   
+
+            //Taget img_By_ID_Name_Reference To Update Dynamic JS_Response
+            var img_by_idName=document.getElementById('pic')
+                img_by_idName.src="../images/nothing-1.jpg" 
+        }
+    
+    </script>
+</head>
+<body>
+    <h1>Javascript Document Object Model</h1>
+    <h1 id="res"></h1>
+   <p> The Document Object (Dom) is a programming interface for HTML and XML documents, it represents the page so that programs can change the document structure, style and content--The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such a Javascript.</p>
+    
+   <br/> <br/>
+   <label for="">Name</label>
+   <input type="text" value="Hello"/><br/>
+   <span class="ref"></span> 
+   <br/><br/>
+
+   <img id="pic" width="30%" height="200px" border="1"/>
+   <br/> <br/>
+   <button onclick="myfun()">TEST</button>
+</body>
+</html>
+

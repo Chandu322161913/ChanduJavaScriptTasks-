@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function_Return_Scoping_this_keyword</title>
+</head>
+<body>
+    <h1>Function without return keyword</h1>
+    <script>
+function f1()
+{
+  document.write("statement-1 <br/>")
+  document.write("statement-2 <br/>")
+  document.write("statement-3 <br/>")
+}
+f1()
+    </script>
+    <br/> <br/> <br/>
+
+    <h1>Function with return keyword</h1>
+    <script>
+function f2()
+{
+  document.write("statement-1 <br/>")
+  document.write("statement-2 <br/>")
+  return false; //stop the execution of the next statement...
+  document.write("statement-3 <br/>")
+}
+f2()
+    </script>
+    <br/> <br/> <br/>
+    
+    <h1>Function with return keyword</h1>
+    <script>
+function f3()
+{
+  document.write("statement-1 <br/>")
+  return false; //stop the execution of the next statement...
+  document.write("statement-2 <br/>")
+  document.write("statement-3 <br/>")
+}
+f3()
+    </script>
+ 
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part-2 Search Name by no Characters typing maxlength</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <script>
+    function myfun()
+    {
+        //Target input_by_Id_Reference----
+        var input_dom=document.getElementById('uname')
+
+        //Target span_by_Id_Reference----
+        var span_dom=document.getElementById('uname-Response')
+
+       //dom.innerText=js_Response
+        span_dom.innerHTML= `Total No Characters: ${input_dom.value.length}`
+    }
+  </script>
+  
+</head>
+<body>
+    <div class="container p-5 w-50">
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input maxlength="50" type="text" class="form-control" id="uname" onkeyup="myfun()"/>
+            <span id="uname-Response">0</span>/50
+        </div>
+        <div class="mb-3">
+            <button type="button" class="btn btn-primary">Read Response</button>
+        </div>
+    </div>
+</body>
+</html>
